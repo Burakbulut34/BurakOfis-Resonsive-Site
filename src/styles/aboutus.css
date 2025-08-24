@@ -1,0 +1,59 @@
+
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.about-image{
+   position: relative; /* overlay için gerekli */
+  display: inline-block;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS uzun basma menüsünü azaltır */
+}
+
+.about-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px; /* img ile aynılarsa estetik olur */
+  background: transparent;
+  /* pointer-events bırakılır; overlay olayları yakalar ama görsel görünmez */
+}
+
+.about-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+   /* kopyalamayı zorlaştıran ek satırlar */
+  -webkit-user-drag: none;   /* Chrome/Safari sürüklemeyi azaltır */
+  -user-drag: none;
+  -webkit-user-select: none; /* metin seçmeyi kapatır (görsele uygulanırsa yardımcı olur) */
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS uzun basma menüsü azaltır */
+  touch-action: manipulation; /* bazı mobil davranışları sınırlar */
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 16px;
+}

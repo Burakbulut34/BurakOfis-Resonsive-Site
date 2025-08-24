@@ -1,0 +1,187 @@
+/* === General Footer === */
+.footer {
+  background: linear-gradient(90deg, #141e30, #243b55);
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* === Main Container === */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Küçük ekranda alt alta */
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* === Each Chapter === */
+.footer-section {
+
+  min-width: 220px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer-section h4::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #ff9800;
+  display: block;
+  margin-top: 8px;
+}
+
+
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff9800;
+}
+
+/* === About (Logo + Writing) === */
+.about {
+  max-width: 300px;
+}
+
+.footer-logo {
+  width: 60px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: 1px solid #ff9800;
+}
+
+.about p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* === Subscribe === */
+.subscribe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.subscribe-input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  flex: 1;
+}
+
+.subscribe-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background: #ff9800;
+  color: #141e30;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+  background: #ffa733;
+}
+
+/* === Social === */
+.social {
+  display: flex;
+  gap: 12px;
+}
+
+.social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.social a:hover {
+  background: #ff9800;
+  border-color: #ffa733;
+}
+
+/* === Lower Part === */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-bottom a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ffa733;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .subscribe-input {
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .subscribe-btn {
+    border-radius: 6px;
+    width: 100%;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}

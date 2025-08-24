@@ -1,0 +1,176 @@
+/* Genel sayfa */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+/* Kart */
+.login-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Başlık */
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.title span {
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Inputlar */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+  top: 20px;
+}
+
+.input-group p {
+  position: absolute;
+  top: -50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #ff9800;
+}
+
+.input-group input {
+  width: 86%;
+  padding: 12px 15px 12px 40px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Seçenekler (beni hatırla + şifre) */
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.2rem;
+}
+
+.options a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+.forgot-pass a{
+  color: #ff9800;
+}
+
+.forgot-pass a:hover {
+  color: #ffa733;
+  transform: translateY(-2px);
+}
+
+
+/* Giriş butonu */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #ff9800;
+  color: #141e30 !important;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px) scale(1.05);
+    background: #ffa733;
+  box-shadow: 0 6px 15px rgba(255, 152, 0, 0.4);
+}
+
+/* Sosyal giriş */
+.or-text {
+  margin: 1.5rem 0 1rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.social-login a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ff9800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #141e30;
+  transition: 0.3s;
+}
+
+.social-login a:hover {
+  background: #ffa733;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 167, 51, 0.4);
+}
+
+/* Kayıt linki */
+.register {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.register a {
+  color: #ff9800;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register a:hover {
+  color: #ffa733;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

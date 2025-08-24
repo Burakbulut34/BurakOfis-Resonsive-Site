@@ -1,0 +1,134 @@
+/* Genel Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 40px;
+  background: linear-gradient(90deg, #141e30, #243b55);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ff9800;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Menü */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline efekti */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #ff9800;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: #ff9800;
+}
+
+/* Sign Up butonu */
+.btn-signup {
+  background: #ff9800;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #141e30 !important;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-signup:hover {
+  background: #ffa733;
+  transform: scale(1.05);
+}
+
+#btn-login{
+  right: 10px;
+}
+
+/* Mobil Menü Butonu */
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobil Tasarım */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: #243b55;
+    text-align: center;
+    padding-top: 40px;
+    gap: 25px;
+    animation: slideIn 0.3s ease-in-out;
+  }
+
+  .nav-links-mobile li a {
+    font-size: 1.3rem;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+/* Animasyon */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
