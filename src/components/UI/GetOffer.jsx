@@ -51,7 +51,7 @@ const GetOffer = ({ withHelmet = false }) =>{
     <label>Ad Soyad</label>
     <input
       type="text"
-      name="Ad - Soyad"
+      name="name"
       placeholder="Adınız"
       value={formData.name}
       onChange={handleChange}
@@ -63,7 +63,7 @@ const GetOffer = ({ withHelmet = false }) =>{
     <label>E-posta</label>
     <input
       type="email"
-      name="E-posta"
+      name="email"
       placeholder="E-posta"
       value={formData.email}
       onChange={handleChange}
@@ -87,7 +87,7 @@ const GetOffer = ({ withHelmet = false }) =>{
   </div>
 
   {/* ✅ Slug'ı gizli input olarak ekledik */}
-  <input type="hidden" name="Teklifte - istenilen - hizmet" value={slug} />
+  <input type="hidden" name="offerSlug" value={slug} />
 
   <button type="submit" className="btn-submit">Teklif Al</button>
 </form>
