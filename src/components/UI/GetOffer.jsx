@@ -79,7 +79,7 @@ const GetOffer = ({ withHelmet = false }) =>{
   <div className="form-group">
     <label>Mesajınız</label>
     <textarea
-      name="Mesaj"
+      name="message"
       placeholder="Mesajınız"
       value={formData.message}
       onChange={handleChange}
@@ -87,7 +87,7 @@ const GetOffer = ({ withHelmet = false }) =>{
   </div>
 
   {/* ✅ Slug'ı gizli input olarak ekledik */}
-  <input type="hidden" name="Teklifte istenilen hizmet" value={slug} />
+  <input type="hidden" name="Teklifte - istenilen - hizmet" value={slug} />
 
   <button type="submit" className="btn-submit">Teklif Al</button>
 </form>
