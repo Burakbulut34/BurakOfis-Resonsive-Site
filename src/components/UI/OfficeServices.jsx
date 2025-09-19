@@ -45,7 +45,7 @@ export default function OfficeServices({ withHelmet = false }) {
       desc: "Saatlik kiralanabilir modern toplantı odaları. Ekran, beyaz tahta ve ikram hazır.",
       perks: ["4‑20 kişi", "Ekran & sunum", "Saatlik plan"],
       icon: SvgMeeting,
-      cta: "Teklif Al",
+      cta: "Kirala",
     },
     {
       title: "Lounge",
@@ -53,7 +53,7 @@ export default function OfficeServices({ withHelmet = false }) {
       desc: "Rahat koltuklar, hızlı Wi‑Fi ve odak/sohbet alanlarıyla esnek dinlenme bölümü.",
       perks: ["Rahat oturma", "Sessiz köşeler", "Topluluk"],
       icon: SvgLounge,
-      cta: "Teklif Al",
+      cta: "Kirala",
     },
   ];
 
