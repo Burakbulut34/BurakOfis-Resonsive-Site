@@ -40,7 +40,7 @@ const GetOffer = ({ withHelmet = false }) =>{
         <div className="offer-container">
             {withHelmet && <Helmet title="Teklif Al" />}
             <div className="offer-box">
-                <h2> {slug === "ofis-hizmetleri" ? "Kirala" : "Teklif Al"} - {slug}</h2>
+                <h2> {(slug === "toplanti-salonlari" || slug === "lounge") ? "Kirala" : "Teklif Al"} - {slug}</h2>
                 <p>İhtiyacınız bize iletin, size en kısa sürede dönüş yapalım.</p>
                <form 
               action="https://formcarry.com/s/ExKMfqcMeaJ" 
