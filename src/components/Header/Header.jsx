@@ -19,9 +19,6 @@ const Navbar = () => {
           <Link to="/">Anasayfa</Link>
         </li>
         <li>
-          <Link to="/office">Ofisler</Link>
-        </li>
-        <li>
           <Link to="/office-services">Ofis Hizmetleri</Link>
         </li>
          <li>
